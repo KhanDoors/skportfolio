@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import logo12 from '../../../images/logo1.png'
+import logo123 from '../../../images/logo123.png'
 import { FaAlignRight } from 'react-icons/fa'
 import styled from 'styled-components'
 import { styles } from '../../../utils'
@@ -11,7 +11,7 @@ class NavbarHeader extends Component {
     return (
       <HeaderWrapper>
         <Link to="/">
-          <img src={logo12} alt="the logo" />
+          <img src={logo123} alt="the logo" />
         </Link>
         <FaAlignRight
           className="toggle-icon"

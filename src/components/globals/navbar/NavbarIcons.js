@@ -41,7 +41,7 @@ class NavbarIcons extends Component {
 
 const IconWrapper = styled.div`
   .icon {
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
     ${styles.transFunction()};
   }
