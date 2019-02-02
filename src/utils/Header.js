@@ -6,6 +6,10 @@ const HomeHeader = ({ img, children }) => {
   return <IndexHeader img={img}>{children}</IndexHeader>
 }
 
+const PageHeader = ({ img, children }) => {
+  return <DefaultHeader img={img}>{children}</DefaultHeader>
+}
+
 const IndexHeader = styled.header`
   min-height: calc(100vh - 77px);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -14,7 +18,17 @@ const IndexHeader = styled.header`
   justify-content: center;
   align-items: center;
 `
+
+const DefaultHeader = styled(IndexHeader)`
+  min-height: 78vh;
+`
+
 HomeHeader.defaultProps = {
   img: img,
 }
-export { HomeHeader }
+
+PageHeader.defaultProps = {
+  img: img,
+}
+
+export { HomeHeader, PageHeader }
