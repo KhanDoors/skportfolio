@@ -18,7 +18,7 @@ class Navbar extends Component {
   render() {
     return (
       <NavWrapper>
-        <NavbarHeader handleNavber={this.handleNavbar} />
+        <NavbarHeader handleNavbar={this.handleNavbar} />
         <NavbarLinks navbarOpen={this.state.navbarOpen} />
         <NavbarIcons />
       </NavWrapper>
