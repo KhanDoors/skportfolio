@@ -27,7 +27,7 @@ class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
-  background: #e51818;
+  background: #780d26;
   @media (min-width: 768px) {
     display: flex;
     align-items: center;

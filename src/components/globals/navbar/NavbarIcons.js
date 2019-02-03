@@ -46,10 +46,10 @@ const IconWrapper = styled.div`
     ${styles.transFunction()};
   }
   .github-icon {
-    color: #333;
+    color: #f11010;
   }
   .linkedin-icon {
-    color: #477794;
+    color: #f11010;
   }
   .icon:hover {
     color: ${styles.colors.mainGreen};

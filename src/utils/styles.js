@@ -1,12 +1,12 @@
 export const colors = {
   mainWhite: `#F0E3C0`,
   mainBlack: `#262626`,
-  mainBurg: `#6B0C22`,
-  mainRed: `#D9042B`,
+  mainBurg: `#780D26`,
+  mainRed: `#f11010`,
   mainGrey: `#554747`,
   mainGreen: `#009D57`,
 }
-export const textSlanted = `font-family:'Caveat', cursive;`
+export const textSlanted = `font-family:'Verdana', cursive;`
 
 export const transDefault = 'transition:all 0.5s ease-in-out'
 export const transFunction = (
