@@ -14,6 +14,7 @@ const Banner = ({ title, subtitle, children }) => {
 
 const BannerWrapper = styled.div`
   margin-bottom: 3rem;
+  text-align: center;
   .title {
     color: ${styles.colors.mainRed};
     font-size: 3rem;
