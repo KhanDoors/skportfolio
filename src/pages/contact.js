@@ -8,7 +8,7 @@ const ContactPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <PageHeader img={contactImg}>
-      <Banner title="contact page" subtitle="Im open to ideas" />
+      <Banner title="contact page" subtitle="Let's get Together" />
     </PageHeader>
   </Layout>
 )
