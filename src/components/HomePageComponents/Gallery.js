@@ -8,28 +8,70 @@ const SINGLE_IMAGE = graphql`
   {
     img1: file(relativePath: { eq: "docker.png" }) {
       childImageSharp {
-        fluid(maxWidth: 500) {
+        fluid(maxWidth: 500, maxHeight: 250) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     img2: file(relativePath: { eq: "Express.JS-nodejs.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 500) {
+        fluid(maxWidth: 500, maxHeight: 250) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     img3: file(relativePath: { eq: "graphql.png" }) {
       childImageSharp {
-        fluid(maxWidth: 500) {
+        fluid(maxWidth: 500, maxHeight: 250) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img4: file(relativePath: { eq: "gatsby-icon.png" }) {
+    img4: file(relativePath: { eq: "gatsby.png" }) {
       childImageSharp {
-        fluid(maxWidth: 500) {
+        fluid(maxWidth: 500, maxHeight: 250) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img5: file(relativePath: { eq: "htmlcss.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, maxHeight: 250) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img6: file(relativePath: { eq: "gimp.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, maxHeight: 250) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img7: file(relativePath: { eq: "adobe-xd.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, maxHeight: 250) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img8: file(relativePath: { eq: "javascript.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, maxHeight: 250) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img9: file(relativePath: { eq: "mongo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, maxHeight: 250) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    img10: file(relativePath: { eq: "react1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, maxHeight: 250) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -46,6 +88,12 @@ const Gallery = () => {
         const img2 = data.img2.childImageSharp.fluid
         const img3 = data.img3.childImageSharp.fluid
         const img4 = data.img4.childImageSharp.fluid
+        const img5 = data.img5.childImageSharp.fluid
+        const img6 = data.img6.childImageSharp.fluid
+        const img7 = data.img7.childImageSharp.fluid
+        const img8 = data.img8.childImageSharp.fluid
+        const img9 = data.img9.childImageSharp.fluid
+        const img10 = data.img10.childImageSharp.fluid
         return (
           <Section>
             <GalleryWrapper>
@@ -58,8 +106,26 @@ const Gallery = () => {
               <div className="item item-3">
                 <Img fluid={img3} />
               </div>
-              <div className="item item-3">
+              <div className="item item-4">
                 <Img fluid={img4} />
+              </div>
+              <div className="item item-5">
+                <Img fluid={img5} />
+              </div>
+              <div className="item item-6">
+                <Img fluid={img6} />
+              </div>
+              <div className="item item-7">
+                <Img fluid={img7} />
+              </div>
+              <div className="item item-8">
+                <Img fluid={img8} />
+              </div>
+              <div className="item item-9">
+                <Img fluid={img9} />
+              </div>
+              <div className="item item-10">
+                <Img fluid={img10} />
               </div>
             </GalleryWrapper>
           </Section>
