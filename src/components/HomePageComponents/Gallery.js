@@ -6,70 +6,70 @@ import Img from 'gatsby-image'
 
 const SINGLE_IMAGE = graphql`
   {
-    img1: file(relativePath: { eq: "docker.png" }) {
+    img1: file(relativePath: { eq: "homeGallery/docker.png" }) {
       childImageSharp {
         fluid(maxWidth: 500, maxHeight: 250) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img2: file(relativePath: { eq: "Express.JS-nodejs.jpg" }) {
+    img2: file(relativePath: { eq: "homeGallery/Express.JS-nodejs.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500, maxHeight: 250) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img3: file(relativePath: { eq: "graphql.png" }) {
+    img3: file(relativePath: { eq: "homeGallery/graphql.png" }) {
       childImageSharp {
         fluid(maxWidth: 500, maxHeight: 250) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img4: file(relativePath: { eq: "gatsby.png" }) {
+    img4: file(relativePath: { eq: "homeGallery/gatsby.png" }) {
       childImageSharp {
         fluid(maxWidth: 500, maxHeight: 250) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img5: file(relativePath: { eq: "htmlcss.jpg" }) {
+    img5: file(relativePath: { eq: "homeGallery/htmlcss.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500, maxHeight: 250) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img6: file(relativePath: { eq: "gimp.png" }) {
+    img6: file(relativePath: { eq: "homeGallery/gimp.png" }) {
       childImageSharp {
         fluid(maxWidth: 500, maxHeight: 250) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img7: file(relativePath: { eq: "adobe-xd.png" }) {
+    img7: file(relativePath: { eq: "homeGallery/adobe-xd.png" }) {
       childImageSharp {
         fluid(maxWidth: 500, maxHeight: 250) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img8: file(relativePath: { eq: "javascript.jpg" }) {
+    img8: file(relativePath: { eq: "homeGallery/javascript.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 500, maxHeight: 250) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img9: file(relativePath: { eq: "mongo.png" }) {
+    img9: file(relativePath: { eq: "homeGallery/mongo.png" }) {
       childImageSharp {
         fluid(maxWidth: 500, maxHeight: 250) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    img10: file(relativePath: { eq: "react1.png" }) {
+    img10: file(relativePath: { eq: "homeGallery/react1.png" }) {
       childImageSharp {
         fluid(maxWidth: 500, maxHeight: 250) {
           ...GatsbyImageSharpFluid
