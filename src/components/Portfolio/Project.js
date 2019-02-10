@@ -28,7 +28,7 @@ const Project = ({ project }) => {
               </a>
             </h4>
           </div>
-          <br />
+
           <div>
             <h4 className="githubSlug">
               {' '}
@@ -76,8 +76,6 @@ const ProjectWrapper = styled.div`
     text-transform: uppercase;
   }
   .slug {
-    display: flex;
-    margin-top: 0.5rem;
     word-spacing: 0.2rem;
     text-transform: lowercase;
   }
