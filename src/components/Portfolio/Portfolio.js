@@ -15,6 +15,9 @@ const PROJECTS = graphql`
           siteSlug
           githubSlug
           id
+          description {
+            description
+          }
           img {
             fixed(width: 150, height: 150) {
               ...GatsbyContentfulFixed

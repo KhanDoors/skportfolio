@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 
 const Project = ({ project }) => {
   const { title, category, siteSlug, githubSlug, id } = project
+  const { description } = project.description
   const { fixed } = project.img
 
   return (
@@ -12,24 +13,36 @@ const Project = ({ project }) => {
       <Img fixed={fixed} className="img" />
       <div className="text">
         <h3 className="title">{title}</h3>
-        <h4 className="slug siteSlug">
-          {' '}
-          <a href={siteSlug} key={id} target="_blank" rel="noopener noreferrer">
-            Website Link
-          </a>
-        </h4>
-
-        <h4 className="slug githubSlug">
-          {' '}
-          <a
-            href={githubSlug}
-            key={id}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github Page
-          </a>
-        </h4>
+        <h5>{description}</h5>
+        <div className="slug">
+          <div>
+            <h4 className="siteSlug">
+              {' '}
+              <a
+                href={siteSlug}
+                key={id}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Website Link
+              </a>
+            </h4>
+          </div>
+          <br />
+          <div>
+            <h4 className="githubSlug">
+              {' '}
+              <a
+                href={githubSlug}
+                key={id}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github Page
+              </a>
+            </h4>
+          </div>
+        </div>
         <div className="project-content">
           <h5 className="category">{category}</h5>
         </div>
@@ -51,8 +64,6 @@ const ProjectWrapper = styled.div`
   .project-content {
     display: flex;
     justify-content: space-between;
-    font-size: 1.4rem;
-    text-transform: uppercase;
   }
   .title {
     color: ${styles.colors.mainBurg};
@@ -61,8 +72,11 @@ const ProjectWrapper = styled.div`
   .category {
     color: ${styles.colors.mainRed};
     margin-top: 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
   }
   .slug {
+    display: flex;
     margin-top: 0.5rem;
     word-spacing: 0.2rem;
     text-transform: lowercase;
