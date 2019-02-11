@@ -32,7 +32,8 @@ const PROJECTS = graphql`
 const Portfolio = () => {
   return (
     <Section>
-      <Title title="My Projects" message="A few of my favorites" />
+      <Title title="Projects" message="A few of my favorite" />
+
       <ProjectList>
         <StaticQuery
           query={PROJECTS}

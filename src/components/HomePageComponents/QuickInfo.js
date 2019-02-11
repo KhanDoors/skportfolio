@@ -8,7 +8,7 @@ class QuickInfo extends Component {
   render() {
     return (
       <Section>
-        <Title message="quick look at what i'm into" title="My Tech" />
+        <Title message="a quick look at the tech i'm into" title="My Stack" />
         <QuickInfoWrapper>
           <p className="text">
             Here is a sample of my tech. Please checkout the About page to learn
