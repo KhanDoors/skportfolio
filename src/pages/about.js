@@ -3,6 +3,8 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { PageHeader, Banner } from '../utils'
 import aboutImg from '../images/aboutPage.jpg'
+import QuickInfo from '../components/HomePageComponents/QuickInfo'
+import Gallery from '../components/HomePageComponents/Gallery'
 
 const AboutPage = () => (
   <Layout>
@@ -13,6 +15,8 @@ const AboutPage = () => (
         subtitle="here is the rundown on how I develop my stack"
       />
     </PageHeader>
+    <QuickInfo />
+    <Gallery />
   </Layout>
 )
 
