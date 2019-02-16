@@ -14,7 +14,7 @@ const ContactForm = () => {
         <form
           className="contactForm"
           name="contact"
-          action="POST"
+          method="POST"
           data-netlify="true"
           data-netlify-recaptcha="true"
         >
