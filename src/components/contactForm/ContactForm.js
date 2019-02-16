@@ -14,23 +14,24 @@ const ContactForm = () => {
         <form
           className="contactForm"
           name="contact"
-          method="POST"
+          action="POST"
           data-netlify="true"
+          data-netlify-recaptcha="true"
         >
           <p>
             <label>
-              Your Name: <input type="text" name="name" />
+              <input type="text" name="name" placeholder="Your Name:" />
             </label>
           </p>
           <p>
             <label>
-              Your Email: <input type="email" name="email" />
+              <input type="email" name="email" placeholder="Your Email:" />
             </label>
           </p>
 
           <p>
             <label>
-              Message: <textarea name="message" rows="7" />
+              <textarea name="message" rows="7" placeholder="Message:" />
             </label>
           </p>
           <p>
@@ -49,11 +50,31 @@ const ContactForm = () => {
 const FormWrapper = styled.div`
   width: 90%;
   margin: 2rem auto;
+  input,
+  textarea,
+  p {
+    padding: 0.4em 0.2em;
+    font-size: 1rem;
+  }
+  .contactForm button {
+    margin: 2em;
+    color: red;
+    cursor: pointer;
+    width: 10rem;
+    :hover {
+      background: ${styles.colors.mainGreen};
+    }
+  }
   .contactForm {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     line-height: 2rem;
-    color: ${styles.colors.mainGrey};
+    color: ${styles.colors.mainWhite};
     word-spacing: 0.2rem;
+    padding: 0.5rem;
+    background: ${styles.colors.mainBurg};
   }
   @media (min-width: 768px) {
     width: 70%;
