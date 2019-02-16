@@ -3,49 +3,47 @@ import { Section, Title } from '../../utils'
 import styled from 'styled-components'
 import { styles } from '../../utils'
 
-const ContactForm = () => {
-  return (
-    <Section>
-      <Title
-        message="Call, email, message or upload a file"
-        title="Lets talk about it"
-      />
-      <FormWrapper>
-        <form
-          className="contactForm"
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
-        >
-          <p>
-            <label>
-              <input type="text" name="name" placeholder="Your Name:" />
-            </label>
-          </p>
-          <p>
-            <label>
-              <input type="email" name="email" placeholder="Your Email:" />
-            </label>
-          </p>
+const ContactForm = () => (
+  <Section>
+    <Title
+      message="Call, email, message or upload a file"
+      title="Lets talk about it"
+    />
+    <FormWrapper>
+      <form
+        className="contactForm"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-recaptcha="true"
+      >
+        <p>
+          <label>
+            <input type="text" name="name" placeholder="Your Name:" />
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="email" name="email" placeholder="Your Email:" />
+          </label>
+        </p>
 
-          <p>
-            <label>
-              <textarea name="message" rows="7" placeholder="Message:" />
-            </label>
-          </p>
-          <p>
-            <input type="file" name="myfile" placeholder="Upload File" />
-          </p>
-          <div data-netlify-recaptcha="true" />
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-      </FormWrapper>
-    </Section>
-  )
-}
+        <p>
+          <label>
+            <textarea name="message" rows="7" placeholder="Message:" />
+          </label>
+        </p>
+        <p>
+          <input type="file" name="myfile" placeholder="Upload File" />
+        </p>
+        <div data-netlify-recaptcha="true" />
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </FormWrapper>
+  </Section>
+)
 
 const FormWrapper = styled.div`
   width: 90%;
