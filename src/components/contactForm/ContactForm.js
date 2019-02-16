@@ -55,12 +55,14 @@ const FormWrapper = styled.div`
   p {
     padding: 0.4em 0.2em;
     font-size: 1rem;
+    width: 17rem;
   }
   .contactForm button {
-    margin: 2em;
+    height: 1.5rem;
     color: red;
     cursor: pointer;
-    width: 10rem;
+    width: 7rem;
+    background: ${styles.colors.mainGrey};
     :hover {
       background: ${styles.colors.mainGreen};
     }
