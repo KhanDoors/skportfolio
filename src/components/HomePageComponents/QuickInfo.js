@@ -11,12 +11,14 @@ class QuickInfo extends Component {
         <Title message="a quick look at the tech i'm into" title="My Stack" />
         <QuickInfoWrapper>
           <p className="text">
-            Here is a sample of my tech. Please checkout the About page to learn
-            more about how I employ these different tools as I work through my
-            stack!
+            Here is a sample of my tech. Please checkout the Portfolio page to
+            learn more about how I employ these different tools to build
+            projects!
           </p>
-          <Link to="/about/" style={{ textDecoration: 'none' }}>
-            <SectionButton style={{ margin: '2rem auto' }}>about</SectionButton>
+          <Link to="/portfolio/" style={{ textDecoration: 'none' }}>
+            <SectionButton style={{ margin: '2rem auto' }}>
+              portfolio
+            </SectionButton>
           </Link>
         </QuickInfoWrapper>
       </Section>

@@ -38,7 +38,7 @@ class Footer extends Component {
             </a>
           ))}
         </div>
-        <p className="copyright">copyright: 2019 KhanDoor Media</p>
+        <p className="copyright">copyright: 2019 KhanDoors Media</p>
       </FooterWrapper>
     )
   }
