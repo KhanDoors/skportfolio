@@ -59,7 +59,7 @@ const GalleryWrapper = styled.div`
     grid-template-columns: repeat(3, 1fr);
   }
   @media (min-width: 992px) {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 `
 
