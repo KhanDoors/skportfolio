@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { PageHeader, Banner, SectionButton } from '../utils'
-import portfolioImg from '../images/portfolio.png'
+import portfolioImg from '../images/portfolio.jpeg'
 import Portfolio from '../components/Portfolio/Portfolio'
 import { Link } from 'gatsby'
 
