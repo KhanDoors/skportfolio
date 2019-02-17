@@ -75,7 +75,7 @@ const FormWrapper = styled.div`
   }
   .form-group input,
   textarea {
-    width: 30rem;
+    width: 18rem;
     padding: 0.5rem;
     margin: 0.5rem;
   }
