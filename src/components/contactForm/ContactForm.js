@@ -64,7 +64,7 @@ const FormWrapper = styled.div`
   background: ${styles.colors.mainWhite};
   .btn {
     height: 2rem;
-    width: 5rem;
+    width: 18rem;
     padding: 0.5rem;
     margin: 0.5rem;
     background: ${styles.colors.mainGrey};
