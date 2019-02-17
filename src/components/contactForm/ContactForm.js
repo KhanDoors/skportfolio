@@ -61,7 +61,7 @@ const FormWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: ${styles.colors.mainWhite};
+  background: ${styles.colors.mainBurg};
   .btn {
     height: 2rem;
     width: 18rem;
