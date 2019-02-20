@@ -12,7 +12,7 @@ const Title = ({ title, message }) => {
   )
 }
 
-Title.defualtPorps = {
+Title.defualtProps = {
   message: 'our message',
   title: 'our title',
 }
