@@ -3,7 +3,7 @@ import Project from './Project'
 import { StaticQuery, graphql } from 'gatsby'
 import { Section, Title, SectionButton } from '../../utils'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import Zoom from 'react-reveal/Zoom'
 
 const PROJECTS = graphql`
   {
@@ -33,18 +33,19 @@ const Portfolio = () => {
   return (
     <Section>
       <Title title="Projects" message="A few of my favorite" />
-
-      <ProjectList>
-        <StaticQuery
-          query={PROJECTS}
-          render={data => {
-            const projects = data.items.edges
-            return projects.map(item => {
-              return <Project key={item.node.id} project={item.node} />
-            })
-          }}
-        />
-      </ProjectList>
+      <Zoom duration={1500}>
+        <ProjectList>
+          <StaticQuery
+            query={PROJECTS}
+            render={data => {
+              const projects = data.items.edges
+              return projects.map(item => {
+                return <Project key={item.node.id} project={item.node} />
+              })
+            }}
+          />
+        </ProjectList>
+      </Zoom>
     </Section>
   )
 }

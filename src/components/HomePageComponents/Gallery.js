@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
 import { styles, Section } from '../../utils'
+import Zoom from 'react-reveal/Zoom'
 import Img from 'gatsby-image'
 
 const GET_IMAGES = graphql`
@@ -28,15 +29,17 @@ const Gallery = () => {
         const images = data.getImages.edges
         return (
           <Section>
-            <GalleryWrapper>
-              {images.map(({ node }, index) => {
-                return (
-                  <div key={index} className={`item item-${index + 1}`}>
-                    <Img fluid={node.childImageSharp.fluid} />
-                  </div>
-                )
-              })}
-            </GalleryWrapper>
+            <Zoom duration={1500}>
+              <GalleryWrapper>
+                {images.map(({ node }, index) => {
+                  return (
+                    <div key={index} className={`item item-${index + 1}`}>
+                      <Img fluid={node.childImageSharp.fluid} />
+                    </div>
+                  )
+                })}
+              </GalleryWrapper>
+            </Zoom>
           </Section>
         )
       }}
