@@ -11,8 +11,8 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <HomeHeader img={img}>
       <Banner title="Syyad Khan" subtitle="Full Stack Developer">
-        <Link to="/portfolio" style={{ textDecoration: 'none' }}>
-          <BannerButton style={{ margin: '2rem auto' }}>Portfolio</BannerButton>
+        <Link to="/about" style={{ textDecoration: 'none' }}>
+          <BannerButton style={{ margin: '2rem auto' }}>The Stack</BannerButton>
         </Link>
       </Banner>
     </HomeHeader>
