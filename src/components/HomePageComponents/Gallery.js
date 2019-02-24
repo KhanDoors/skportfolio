@@ -29,7 +29,7 @@ const Gallery = () => {
         const images = data.getImages.edges
         return (
           <Section>
-            <Zoom duration={1500}>
+            <Zoom duration={3000}>
               <GalleryWrapper>
                 {images.map(({ node }, index) => {
                   return (

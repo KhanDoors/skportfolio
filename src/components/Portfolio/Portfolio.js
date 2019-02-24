@@ -3,7 +3,7 @@ import Project from './Project'
 import { StaticQuery, graphql } from 'gatsby'
 import { Section, Title, SectionButton } from '../../utils'
 import styled from 'styled-components'
-import Zoom from 'react-reveal/Zoom'
+import Slide from 'react-reveal/Slide'
 
 const PROJECTS = graphql`
   {
@@ -33,7 +33,7 @@ const Portfolio = () => {
   return (
     <Section>
       <Title title="Projects" message="A few of my favorite" />
-      <Zoom duration={1500}>
+      <Slide right>
         <ProjectList>
           <StaticQuery
             query={PROJECTS}
@@ -45,7 +45,7 @@ const Portfolio = () => {
             }}
           />
         </ProjectList>
-      </Zoom>
+      </Slide>
     </Section>
   )
 }

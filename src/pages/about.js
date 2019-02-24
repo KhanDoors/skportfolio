@@ -5,6 +5,7 @@ import { PageHeader, Banner } from '../utils'
 import aboutImg from '../images/aboutPage.jpg'
 import QuickInfo from '../components/HomePageComponents/QuickInfo'
 import Gallery from '../components/HomePageComponents/Gallery'
+import PyramidStack from '../components/pyramidStack/PyramidStack'
 
 const AboutPage = () => (
   <Layout>
@@ -15,8 +16,9 @@ const AboutPage = () => (
         subtitle="here is the rundown on how I develop my stack"
       />
     </PageHeader>
-    <QuickInfo />
     <Gallery />
+    <QuickInfo />
+    <PyramidStack />
   </Layout>
 )
 
