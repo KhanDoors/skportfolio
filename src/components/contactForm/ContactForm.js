@@ -6,10 +6,6 @@ import { styles } from '../../utils'
 const ContactForm = () => {
   return (
     <Section>
-      <Title
-        message="Call, Message or send an email"
-        title="Let's Talk About it"
-      />
       <FormWrapper>
         <form action="https://formspree.io/syyadkhan@yahoo.com" method="POST">
           {/* name */}

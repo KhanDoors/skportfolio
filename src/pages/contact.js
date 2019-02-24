@@ -4,6 +4,7 @@ import SEO from '../components/seo'
 import { PageHeader, Banner } from '../utils'
 import contactImg from '../images/contact.jpeg'
 import ContactForm from '../components/contactForm/ContactForm'
+import MyInfo from '../components/contactForm/MyInfo'
 
 const ContactPage = () => (
   <Layout>
@@ -11,6 +12,7 @@ const ContactPage = () => (
     <PageHeader img={contactImg}>
       <Banner title="contact page" subtitle="Let's get Together" />
     </PageHeader>
+    <MyInfo />
     <ContactForm />
   </Layout>
 )

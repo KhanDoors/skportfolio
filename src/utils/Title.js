@@ -5,8 +5,8 @@ import { styles } from '../utils'
 const Title = ({ title, message }) => {
   return (
     <TitleWrapper>
-      <h3 className="message">{message}</h3>
       <h1 className="title">{title}</h1>
+      <h3 className="message">{message}</h3>
       <div className="underline" />
     </TitleWrapper>
   )
