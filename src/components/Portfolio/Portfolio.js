@@ -3,7 +3,7 @@ import Project from './Project'
 import { StaticQuery, graphql } from 'gatsby'
 import { Section, Title, SectionButton } from '../../utils'
 import styled from 'styled-components'
-import Slide from 'react-reveal/Slide'
+import Rotate from 'react-reveal/Rotate'
 
 const PROJECTS = graphql`
   {
@@ -33,7 +33,7 @@ const Portfolio = () => {
   return (
     <Section>
       <Title title="Projects" message="A few of my favorites" />
-      <Slide right>
+      <Rotate top left duration={2000}>
         <ProjectList>
           <StaticQuery
             query={PROJECTS}
@@ -45,7 +45,7 @@ const Portfolio = () => {
             }}
           />
         </ProjectList>
-      </Slide>
+      </Rotate>
     </Section>
   )
 }
