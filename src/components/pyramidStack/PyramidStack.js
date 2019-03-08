@@ -58,9 +58,13 @@ const PyramidWrapper = styled.div`
     justify-content: center;
     flex-direction: column;
   }
+  p:hover {
+    transform: scale(1.5);
+  }
   p {
-    color: ${styles.colors.mainBlack};
-    font-size: 17px;
+    color: ${styles.colors.mainRed};
+    background: ${styles.colors.mainWhite};
+    font-size: 20px;
   }
   @media (min-width: 576px) {
     grid-template-columns: 95%;
