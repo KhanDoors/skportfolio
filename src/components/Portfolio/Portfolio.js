@@ -1,7 +1,7 @@
 import React from 'react'
 import Project from './Project'
 import { StaticQuery, graphql } from 'gatsby'
-import { Section, Title, SectionButton } from '../../utils'
+import { Section, Title } from '../../utils'
 import styled from 'styled-components'
 import Rotate from 'react-reveal/Rotate'
 

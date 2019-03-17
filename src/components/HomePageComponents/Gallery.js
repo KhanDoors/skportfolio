@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
-import { styles, Section } from '../../utils'
+import { Section } from '../../utils'
 import Zoom from 'react-reveal/Zoom'
 import Img from 'gatsby-image'
 
