@@ -4,7 +4,7 @@ import SEO from '../components/seo'
 import { HomeHeader, Banner, BannerButton } from '../utils'
 import img from '../images/homePage.jpg'
 import Flip from 'react-reveal/Flip'
-import Blog from '../components/blog/blog'
+import Blog from './blog'
 
 import { Link } from 'gatsby'
 

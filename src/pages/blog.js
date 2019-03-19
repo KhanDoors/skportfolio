@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { Section, Title } from '../../utils'
+import { Section, Title } from '../utils'
 import styled from 'styled-components'
-import { styles } from '../../utils'
+import { styles } from '../utils'
 
 class Blog extends Component {
   render() {
