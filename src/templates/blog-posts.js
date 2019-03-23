@@ -19,7 +19,7 @@ const Template = ({ data }) => {
         <h4>Author {post.frontmatter.author}</h4>
         <Link to="/blog" style={{ textDecoration: 'none' }}>
           <BannerButton style={{ margin: '2rem auto', background: '#554747' }}>
-            Back to Blog
+            Back to Blog Page
           </BannerButton>
         </Link>
       </Section>
@@ -45,6 +45,8 @@ const BlogPostWrapper = styled.div`
   display: block;
   background: ${styles.colors.mainWhite};
   margin: 0.5rem;
+  word-spacing: 2px;
+  line-height: 30px;
   h4 {
     color: ${styles.colors.mainRed};
   }
