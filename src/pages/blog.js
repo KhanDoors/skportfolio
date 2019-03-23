@@ -2,7 +2,14 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { HomeHeader, Banner, BannerButton, Section } from '../utils'
+import {
+  HomeHeader,
+  Banner,
+  BannerButton,
+  Section,
+  Title,
+  styles,
+} from '../utils'
 import img from '../images/blog.jpg'
 import styled from 'styled-components'
 
@@ -18,16 +25,16 @@ const Blog = ({ data }) => (
     </HomeHeader>
     <Section>
       <BlogWrapper>
-        <h1>I find it all Amazing</h1>
+        <Title title="Developer News" message="I find this all Amazing!!" />
         {data.allMarkdownRemark.edges.map(post => (
-          <div key={post.node.id}>
-            <h3>{post.node.frontmatter.title}</h3>
-            <small>
-              Post by {post.node.frontmatter.author} on{' '}
-              {post.node.frontmatter.date}
-            </small>
-            <Link to={post.node.frontmatter.path}>Read more</Link>
-            <hr />
+          <div className="blog" key={post.node.id}>
+            <h1>
+              {post.node.frontmatter.title}
+
+              <Link to={post.node.frontmatter.path}> - Read more </Link>
+            </h1>
+            <h4>{post.node.frontmatter.date}</h4>
+            <h3>Author {post.node.frontmatter.author}</h3>
           </div>
         ))}
       </BlogWrapper>
@@ -54,8 +61,15 @@ export const pageQuery = graphql`
 `
 const BlogWrapper = styled.div`
   display: block;
-  .item {
-    position: relative;
+  .blog {
+    background: ${styles.colors.mainGreen};
+    margin: 0.5rem;
+  }
+  h4 {
+    color: ${styles.colors.mainRed};
+  }
+  h3 {
+    color: ${styles.colors.mainBlack};
   }
   @media (min-width: 576px) {
     grid-template-columns: 1fr 1fr;

@@ -15,7 +15,7 @@ const IndexPage = () => (
         <Banner title="Syyad Khan" subtitle="Full Stack Developer">
           <Link to="/blog" style={{ textDecoration: 'none' }}>
             <BannerButton style={{ margin: '2rem auto' }}>
-              Khandoor Blog
+              Dev's Blog
             </BannerButton>
           </Link>
         </Banner>
