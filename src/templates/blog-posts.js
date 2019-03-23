@@ -45,7 +45,6 @@ const BlogPostWrapper = styled.div`
   display: block;
   background: ${styles.colors.mainWhite};
   margin: 0.5rem;
-  }
   h4 {
     color: ${styles.colors.mainRed};
   }
