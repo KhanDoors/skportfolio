@@ -13,9 +13,9 @@ const IndexPage = () => (
     <HomeHeader img={img}>
       <Flip duration={1500}>
         <Banner title="Syyad Khan" subtitle="Full Stack Developer">
-          <Link to="/about" style={{ textDecoration: 'none' }}>
+          <Link to="/blog" style={{ textDecoration: 'none' }}>
             <BannerButton style={{ margin: '2rem auto' }}>
-              The Stack
+              Khandoor Blog
             </BannerButton>
           </Link>
         </Banner>
