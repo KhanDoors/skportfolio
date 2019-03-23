@@ -14,12 +14,12 @@ const Template = ({ data }) => {
       <Section>
         <BlogPostWrapper>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <hr />
+          <h4> Author {post.frontmatter.author}</h4>
         </BlogPostWrapper>
-        <hr />
-        <h4>Author {post.frontmatter.author}</h4>
         <Link to="/blog" style={{ textDecoration: 'none' }}>
           <BannerButton style={{ margin: '2rem auto', background: '#554747' }}>
-            Back to Blog Page
+            Blog Page
           </BannerButton>
         </Link>
       </Section>
@@ -45,13 +45,14 @@ const BlogPostWrapper = styled.div`
   display: block;
   background: ${styles.colors.mainWhite};
   margin: 0.5rem;
+  padding: 2rem;
   word-spacing: 2px;
   line-height: 30px;
   h4 {
-    color: ${styles.colors.mainRed};
-  }
-  h3 {
-    color: ${styles.colors.mainBlack};
+    font-size: 1em;
+    color: ${styles.colors.mainBurg};
+    text-align: center;
+    margin: 0.5rem;
   }
   @media (min-width: 576px) {
     grid-template-columns: 1fr 1fr;
