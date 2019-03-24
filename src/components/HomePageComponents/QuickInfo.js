@@ -28,7 +28,7 @@ class QuickInfo extends Component {
           </p>
           <Link to="/portfolio/" style={{ textDecoration: 'none' }}>
             <SectionButton style={{ margin: '2rem auto' }}>
-              portfolio
+              my portfolio
             </SectionButton>
           </Link>
         </QuickInfoWrapper>

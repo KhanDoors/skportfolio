@@ -11,7 +11,10 @@ class MyInfo extends Component {
       <Section>
         <Slide right duration={2500}>
           <Link to="/" style={{ textDecoration: 'none' }}>
-            <SectionButton style={{ margin: '2rem auto' }}>Home</SectionButton>
+            <SectionButton style={{ margin: '2rem auto' }}>
+              {' '}
+              Back Home
+            </SectionButton>
           </Link>
           <Title
             message="Call, Email or use the below form to send me a Message"

@@ -18,7 +18,7 @@ class PortfolioInfo extends Component {
           </h4>
           <Link to="/contact/" style={{ textDecoration: 'none' }}>
             <SectionButton style={{ margin: '2rem auto' }}>
-              My Contact Page
+              Contact Me
             </SectionButton>
           </Link>
         </PortfolioInfoWrapper>

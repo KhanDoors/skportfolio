@@ -23,6 +23,10 @@ class GeneralInfo extends Component {
             come on that. Generally I want to take writing code as far as I
             possibly can. The contact page has a form that will email me
             directly if you need to get in touch with me. Thank you.
+            <br />
+            <br />
+            ps. yes some of the transitions and animations are over the top but
+            I was having fun and couldn't help myself!
           </h4>
         </GeneralInfoWrapper>
       </Section>
