@@ -24,8 +24,12 @@ const Blog = ({ data }) => (
       </Banner>
     </HomeHeader>
     <Section>
+      <Title title="Developer News" message="I find this all Amazing!!" />
       <BlogWrapper>
-        <Title title="Developer News" message="I find this all Amazing!!" />
+        <p>
+          I love writing and always wanted to be a journalist, here is my
+          chance.
+        </p>
         {data.allMarkdownRemark.edges.map(post => (
           <div className="blog" key={post.node.id}>
             <h1>
@@ -60,10 +64,17 @@ export const pageQuery = graphql`
   }
 `
 const BlogWrapper = styled.div`
+  width: 90%;
+  margin: 2rem auto;
   display: block;
   .blog {
     background: ${styles.colors.mainGreen};
     margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  p {
+    margin: 0.5rem;
+    padding: 0.5rem;
   }
   h4 {
     color: ${styles.colors.mainRed};
