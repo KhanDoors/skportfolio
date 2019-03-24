@@ -1,11 +1,11 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { PageHeader, Banner, SectionButton } from '../utils'
+import { PageHeader, Banner } from '../utils'
 import portfolioImg from '../images/portfolio.png'
 import Portfolio from '../components/Portfolio/Portfolio'
-import { Link } from 'gatsby'
 import Zoom from 'react-reveal/Zoom'
+import PortfolioInfo from '../components/Portfolio/portfolioInfo'
 
 const PortfolioPage = () => (
   <Layout>
@@ -15,9 +15,7 @@ const PortfolioPage = () => (
         <Banner title="my passion" subtitle="I love this stuff" />
       </Zoom>
     </PageHeader>
-    <Link to="/contact/" style={{ textDecoration: 'none' }}>
-      <SectionButton style={{ margin: '2rem auto' }}>Say Hello</SectionButton>
-    </Link>
+    <PortfolioInfo />
     <Portfolio />
   </Layout>
 )
