@@ -46,7 +46,8 @@ const PyramidStack = () => {
             <img src={FrontendImage} alt="frontend" />
             <p>
               HTML(of course) Bootstrap, Material-UI, I have used them all but
-              my favorites are probably CSS Grid and Flexbox.
+              my favorites are probably CSS Grid and Flexbox. I think a lot of
+              Dev's underestimate the importance of CSS.
             </p>
             <img src={BizLogicImage} alt="bizlogic" />
             <p>I use React and Javascript everyday, every good day that is.</p>

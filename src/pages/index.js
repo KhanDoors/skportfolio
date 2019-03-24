@@ -4,6 +4,7 @@ import SEO from '../components/seo'
 import { HomeHeader, Banner, BannerButton } from '../utils'
 import img from '../images/homePage.jpg'
 import Flip from 'react-reveal/Flip'
+import GeneralInfo from '../components/frontPageSections/generalInfo'
 
 import { Link } from 'gatsby'
 
@@ -21,6 +22,7 @@ const IndexPage = () => (
         </Banner>
       </Flip>
     </HomeHeader>
+    <GeneralInfo />
   </Layout>
 )
 
