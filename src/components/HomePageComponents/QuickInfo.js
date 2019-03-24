@@ -11,8 +11,22 @@ class QuickInfo extends Component {
         <Title title="My Stack" message="a quick look at the tech i'm into" />
         <QuickInfoWrapper>
           <p className="text">
-            This is the tech I am most familiar with. Please checkout my
-            Portfolio page to see what I build using these AMAZING tools!
+            So I was told that I have too many techs listed. My initial thought
+            was to remove some and comply. So I tried to remove some and thought
+            they were all so important that instead of removing them why not
+            explain them? So let me try to do that below. Here is a link to a
+            library where i keep a lot of lessons on the different techs.
+            <br />
+            <a
+              href="https://khandoor-dev-library.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Developer Library
+            </a>
+            <br />
+            Please checkout my Portfolio page to see what I build using these
+            AMAZING tools!
           </p>
           <Link to="/portfolio/" style={{ textDecoration: 'none' }}>
             <SectionButton style={{ margin: '2rem auto' }}>

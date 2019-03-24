@@ -17,8 +17,31 @@ const PyramidStack = () => {
           <div className="stackpiece">
             <img src={UiuxImage} alt="uiux" />
             <p>
-              I use GIMP for raster image manipulation and Inkscape for SVG
-              image work. Adobe XD is great for prototyping.
+              I use{' '}
+              <a
+                href="https://www.youtube.com/watch?v=ADvUgeOm0E4&t=12s"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GIMP
+              </a>{' '}
+              for raster image manipulation and{' '}
+              <a
+                href="https://www.youtube.com/watch?v=8f011wdiW7g&list=PLqazFFzUAPc5lOQwDoZ4Dw2YSXtO7lWNv"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Inkscape
+              </a>{' '}
+              for SVG image work.{' '}
+              <a
+                href="https://www.youtube.com/watch?v=ASAtZfCLqlU"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Adobe XD
+              </a>{' '}
+              is great for prototyping.
             </p>
             <img src={FrontendImage} alt="frontend" />
             <p>
