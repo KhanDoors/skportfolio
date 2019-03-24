@@ -16,12 +16,13 @@ class GeneralInfo extends Component {
           <h4 className="text">
             Throughout this site you will see what I hope is an honest portrayal
             of who I am as a developer. The tech that I am familiar with, the
-            projects I have built and the passion I have for this work. I have
-            many more projects to display. I hope to contribute to the blog as
-            frequently as I can. I want to use the Stack page to teach what I
-            know about those techs. I have plans for a Youtube channel, more to
+            projects I have built and the passion I have for this work. I hope
+            to contribute to the blog as frequently as I can. I want to use the
+            Stack page to teach what I know about those techs. I have many more
+            projects to display. I have plans for a Youtube channel, more to
             come on that. Generally I want to take writing code as far as I
-            possibly can.
+            possibly can. The contact page has a form that will email me
+            directly if you need to get in touch with me. Thank you.
           </h4>
         </GeneralInfoWrapper>
       </Section>
