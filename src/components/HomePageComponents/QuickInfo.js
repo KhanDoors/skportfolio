@@ -14,19 +14,17 @@ class QuickInfo extends Component {
             So I was told that I have too many techs listed. My initial thought
             was to remove some and comply. So I tried to remove some and thought
             they were all so important that instead of removing them why not
-            explain them? So let me try to do that below. Here is a link to a
-            library where i keep a lot of lessons on the different techs.
-            <br />
+            explain them? So let me try to do that below. Here is a link to my{' '}
             <a
               href="https://khandoor-dev-library.herokuapp.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
               Developer Library
-            </a>
-            <br />
-            Please checkout my Portfolio page to see what I build using these
-            AMAZING tools!
+            </a>{' '}
+            where i keep a lot of lessons on the different techs . Please
+            checkout my Portfolio page to see what I build using these AMAZING
+            tools!
           </p>
           <Link to="/portfolio/" style={{ textDecoration: 'none' }}>
             <SectionButton style={{ margin: '2rem auto' }}>
@@ -46,6 +44,9 @@ const QuickInfoWrapper = styled.div`
     line-height: 2rem;
     color: ${styles.colors.mainGrey};
     word-spacing: 0.2rem;
+  }
+  a {
+    color: ${styles.colors.mainRed};
   }
   @media (min-width: 768px) {
     width: 70%;
