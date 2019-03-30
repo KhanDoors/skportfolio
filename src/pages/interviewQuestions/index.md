@@ -189,3 +189,70 @@ const todoItems = todos.map(todo => <li key={todo.id}>{todo.text}</li>)
 - You should avoid using indexes as keys if the order of items may change.
 
 - You should lift the key up to the component, instead of the \<li> element, if you extract list items as components.
+
+## 18. What is the difference between a parameter and an argument?
+
+Parameters are the variable names of the function definition, while arguments are the values given to a function when it is invoked.
+
+```javascript
+function myFunction(parameter1, parameter2) {
+  console.log(arguments[0]) // "argument1"
+}
+myFunction('argument1', 'argument2')
+```
+
+#### Good to hear
+
+arguments is an array-like object containing information about the arguments supplied to an invoked function.
+
+myFunction.length describes the arity of a function (how many parameters it has, regardless of how many arguments it is supplied).
+
+## 19. What is the difference between synchronous and asynchronous code in JavaScript?
+
+Synchronous means each operation must wait for the previous one to complete.
+
+Asynchronous means an operation can occur while another operation is still being processed.
+
+In JavaScript, all code is synchronous due to the single-threaded nature of it. However, asynchronous operations not part of the program (such as XMLHttpRequest or setTimeout) are processed outside of the main thread because they are controlled by native code (browser APIs), but callbacks part of the program will still be executed synchronously.
+
+#### Good to hear
+
+JavaScript has a concurrency model based on an "event loop".
+
+Functions like **alert** block the main thread so that no user input is registered until the user closes it.
+
+## 20. What are JavaScript data types?
+
+The latest ECMAScript standard defines seven data types, six of them being primitive: _Boolean_, _Null_, _Undefined_, _Number_, _String_, _Symbol_ and one non-primitive data type: _Object_.
+
+#### Good to hear
+
+- Mention of newly added _Symbol_ data type
+
+- _Array_, _Date_ and _function_ are all of type _object_
+
+- Functions in JavaScript are objects with the capability of being callable
+
+## 21. What are higher-order components?
+
+A higher-order component (HOC) is a function that takes a component as an argument and returns a new component. It is a pattern that is derived from React’s compositional nature. Higher-order components are like pure components because they accept any dynamically provided child component, but they won’t modify or copy any behavior from their input components.
+
+- They can be used for state abstraction and manipulation, props manipulation, render high jacking, etc.
+
+## 22. What is the event loop in Node.js?
+
+The event loop handles all async callbacks. Callbacks are queued in a loop, while other code runs, and will run one by one when the response for each one has been received.
+
+- The event loop allows Node.js to perform non-blocking I/O operations, despite the fact that JavaScript is single-threaded
+
+![Event Loop](https://i.stack.imgur.com/Lbs9z.png 'Event Loop')
+
+## 23. What is a virtual DOM and why is it used in libraries/frameworks?
+
+The virtual DOM (VDOM) is a representation of the real DOM in the form of plain JavaScript objects. These objects have properties to describe the real DOM nodes they represent: the node name, its attributes, and child nodes.
+
+The library/framework uses the virtual DOM as a means to improve performance. When the state of an application changes, the real DOM needs to be updated to reflect it. However, changing real DOM nodes is costly compared to recalculating the virtual DOM. The previous virtual DOM can be compared to the new virtual DOM very quickly in comparison.
+
+Once the changes between the old VDOM and new VDOM have been calculated by the diffing engine of the framework, the real DOM can be patched efficiently in the least time possible to match the new state of the application.
+
+![Virtual DOM](https://elmprogramming.com/images/virtual-dom/elm-runtime-virtual-dom.png 'Virtual DOM')
