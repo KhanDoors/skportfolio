@@ -1,6 +1,6 @@
 ---
-path: '/post-two'
-date: '2019-03-20'
+path: '/fullStackDev'
+date: '2019-03-30'
 title: 'Full Stack Developer'
 author: 'Syyad Khan'
 ---

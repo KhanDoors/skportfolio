@@ -1,5 +1,5 @@
 ---
-path: '/post-one'
+path: '/future'
 date: '2019-03-23'
 title: 'The Future'
 author: 'Syyad Khan'
