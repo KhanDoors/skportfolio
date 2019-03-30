@@ -5,7 +5,7 @@ title: 'JavaScript Algorithms'
 author: 'Syyad Khan'
 ---
 
-# #1-Equal Sides Of An Array
+# 1. Equal Sides Of An Array
 
 You are going to be given an array of integers. Your job is to take that array and find an index N where the sum of the integers to the left of N is equal to the sum of the integers to the right of N. If there is no index that would make this happen, return -1.
 
@@ -49,7 +49,7 @@ console.log(findEvenIndex([1, 2, 3, 4, 3, 2, 1]))
 
 -
 
-# #2-Unique In Order
+# 2. Unique In Order
 
 Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.
 
