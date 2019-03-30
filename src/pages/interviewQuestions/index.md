@@ -5,19 +5,7 @@ title: 'Interview Questions'
 author: 'Syyad Khan'
 ---
 
-## 1. What’s the difference between SOAP and REST?
-
-One of the key differences is that SOAP uses XML while REST also supports text, JSON and other formats.
-
--
-
-## 2. Which CMSs have you worked with?
-
-Some common open-source content management systems (CMSs) are WordPress, Joomla and Drupal. I ahve used Conetentful.
-
--
-
-## 3. What is the difference between the equality operators == and ===?
+## 1. What is the difference between the equality operators == and ===?
 
 Triple equals (===) checks for strict equality, which means both the type and value must be the same. Double equals (==) on the other hand first performs type coercion so that both operands are of the same type and then applies strict comparison.
 
@@ -29,7 +17,7 @@ Type coercion means the values are converted into the same type.
 
 Mention of falsy values and their comparison.
 
-## 4. What is the difference between an element and a component in React?
+## 2. What is the difference between an element and a component in React?
 
 An element is a plain JavaScript object that represents a DOM node or component.
 A component is a function or class. Components can have state and take props as input and return an element tree as output (although they can represent generic containers or wrappers and don't necessarily have to emit DOM). Components can initiate side effects in lifecycle methods (e.g. AJAX requests, DOM mutations, interfacing with 3rd party libraries)
@@ -40,11 +28,11 @@ Elements are immutable, plain objects that describe the DOM nodes or components 
 
 Components can be either classes or functions, that take props as an input and return an element tree as the output.
 
-## 5. What does lifting state up in React mean?
+## 3. What does lifting state up in React mean?
 
 When several components need to share the same data, then it is recommended to lift the shared state up to their closest common ancestor. For example, if two child components share the same data, it is recommended to move the shared state to parent instead of maintaining the local state in both child components.
 
-## 6. In which states can a Promise be?
+## 4. In which states can a Promise be?
 
 a. pending: initial state, neither fulfilled nor rejected.
 
@@ -52,7 +40,7 @@ b. fulfilled: meaning that the operation completed successfully.
 
 c. rejected: meaning that the operation failed.
 
-## 7. How do you write comments inside a JSX tree in React?
+## 5. How do you write comments inside a JSX tree in React?
 
 Comments must be wrapped inside curly braces {} and use the /\* \*/ syntax.
 
@@ -65,7 +53,7 @@ const tree = (
 )
 ```
 
-## 8. What is the purpose of callback function as an argument of setState?
+## 6. What is the purpose of callback function as an argument of setState?
 
 The callback function is invoked when setState has finished and the component gets rendered. Since setState is asynchronous, the callback function is used for any post action.
 
@@ -75,13 +63,13 @@ setState({ name: 'syyad' }, () => {
 })
 ```
 
-## 9. How do you clone an object in JavaScript?
+## 7. How do you clone an object in JavaScript?
 
 Using the object spread operator ..., the object's own enumerable properties can be copied into the new object. This creates a shallow clone of the object.
 
 With this technique, prototypes are ignored. In addition, nested objects are not cloned, but rather their references get copied, so nested objects still refer to the same objects as the original. Deep-cloning is much more complex in order to effectively clone any type of object (Date, RegExp, Function, Set, etc) that may be nested within the object.
 
-## 10. What is CORS?
+## 8. What is CORS?
 
 Cross-Origin Resource Sharing or CORS is a mechanism that uses additional HTTP headers to grant a browser permission to access resources from a server at an origin different from the website origin.
 
@@ -91,7 +79,7 @@ CORS behavior is not an error,  it’s a security mechanism to protect users.
 
 CORS is designed to prevent a malicious website that a user may unintentionally visit from making a request to a legitimate website to read their personal data or perform actions against their will.
 
-## 11. Describe the layout of the CSS Box Model and briefly describe each component.
+## 9. Describe the layout of the CSS Box Model and briefly describe each component.
 
 Content: The inner-most part of the box filled with content, such as text, an image, or video player. It has the dimensions content-box width and content-box height.
 
@@ -105,7 +93,7 @@ Margin: The transparent outer-most layer that surrounds the border. It separates
 
 ![Box Model](https://www.washington.edu/accesscomputing/webd2/student/unit3/images/boxmodel.gif 'Box Model')
 
-## 12. What is the DOM?
+## 10. What is the DOM?
 
 The DOM (Document Object Model) is a cross-platform API that treats HTML and XML documents as a tree structure consisting of nodes. These nodes (such as elements and text nodes) are objects that can be programmatically manipulated and any visible changes made to them are reflected live in the document. In a browser, this API is available to JavaScript where DOM nodes can be manipulated to change their styles, contents, placement in the document, or interacted with through event listeners.
 
@@ -118,3 +106,86 @@ The DOM is constructed progressively in the browser as a page loads, which is wh
 document.getElementById() and document.querySelector() are common functions for selecting DOM nodes.
 
 Setting the innerHTML property to a new value runs the string through the HTML parser, offering an easy way to append dynamic HTML content to a node.
+
+## 11. What is the difference between em and rem units?
+
+Both **em** and **rem** units are based on the font-size CSS property. The only difference is where they inherit their values from.
+
+**em** units inherit their value from the font-size of the parent element
+
+**rem** units inherit their value from the font-size of the root element (html)
+In most browsers, the font-size of the root element is set to 16px by default.
+
+#### Good to hear
+
+Important for mobile responsive sites.
+
+## 12. What is event delegation and why is it useful? Can you show an example of how to use it?
+
+Event delegation is a technique of delegating events to a single common ancestor. Due to event bubbling, events "bubble" up the DOM tree by executing any handlers progressively on each ancestor element up to the root that may be listening to it.
+
+DOM events provide useful information about the element that initiated the event via Event.target. This allows the parent element to handle behavior as though the target element was listening to the event, rather than all children of the parent or the parent itself.
+
+This provides two main benefits:
+
+- It increases performance and reduces memory consumption by only needing to register a single event listener to handle potentially thousands of elements.
+- If elements are dynamically added to the parent, there is no need to register new event listeners for them.
+
+## 13. What is the difference between an expression and a statement in JavaScript?
+
+There are two main syntactic categories in JavaScript: expressions and statements. A third one is both together, referred to as an expression statement. They are roughly summarized as:
+
+-Expression: produces a value
+-Statement: performs an action
+-Expression statement: produces a value and performs an action
+
+**A general rule of thumb:**
+_If you can print it or assign it to a variable, it’s an expression. If you can’t, it’s a statement._
+
+## 14. What are truthy and falsy values in JavaScript?
+
+A value is either truthy or falsy depending on how it is evaluated in a Boolean context. Falsy means false-like and truthy means true-like. Essentially, they are values that are coerced to true or false when performing certain operations.
+
+There are 6 falsy values in JavaScript. They are:
+
+- false
+- undefined
+- null
+- "" (empty string)
+- NaN
+- 0 (both +0 and -0)
+
+Every other value is considered truthy.
+
+## 15. What is the difference between the array methods map() and forEach()?
+
+Both methods iterate through the elements of an array. map() maps each element to a new element by invoking the callback function on each element and returning a new array. On the other hand, forEach() invokes the callback function for each element but does not return a new array. forEach() is generally used when causing a side effect on each iteration, whereas map() is a common functional programming technique.
+
+#### Good to hear
+
+- Use forEach() if you need to iterate over an array and cause mutations to the elements without needing to return values to generate a new array.
+
+- map() is the right choice to keep data immutable where each value of the original array is mapped to a new array.
+
+## 16. How does hoisting work in JavaScript?
+
+Hoisting is a JavaScript mechanism where variable and function declarations are put into memory during the compile phase. This means that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.
+
+## 17. What is a key? What are the benefits of using it in lists?
+
+Keys are a special string attribute that helps React identify which items have been changed, added or removed. They are used when rendering array elements to give them a stable identity. Each element's key must be unique (e.g. IDs from the data or indexes as a last resort).
+
+```javascript
+const todoItems = todos.map(todo => <li key={todo.id}>{todo.text}</li>)
+```
+
+- Using indexes as keys is not recommended if the order of items may change, as it might negatively impact performance and may cause issues with component state.
+- If you extract list items as a separate component then apply keys on the list component instead of the <li> tag.
+
+#### Good to hear
+
+- Keys give elements in a collection a stable identity and help React identify changes.
+
+- You should avoid using indexes as keys if the order of items may change.
+
+- You should lift the key up to the component, instead of the \<li> element, if you extract list items as components.
