@@ -97,6 +97,8 @@ Margin: The transparent outer-most layer that surrounds the border. It separates
 
 The DOM (Document Object Model) is a cross-platform API that treats HTML and XML documents as a tree structure consisting of nodes. These nodes (such as elements and text nodes) are objects that can be programmatically manipulated and any visible changes made to them are reflected live in the document. In a browser, this API is available to JavaScript where DOM nodes can be manipulated to change their styles, contents, placement in the document, or interacted with through event listeners.
 
+![The DOM](https://www.researchgate.net/profile/Jian_Chang4/publication/254002847/figure/fig1/AS:298235726974978@1448116346303/Example-of-DOM-Node-Tree.png 'The DOM')
+
 #### Good to hear
 
 The DOM was designed to be independent of any particular programming language, making the structural representation of the document available from a single, consistent API.
@@ -107,7 +109,7 @@ document.getElementById() and document.querySelector() are common functions for 
 
 Setting the innerHTML property to a new value runs the string through the HTML parser, offering an easy way to append dynamic HTML content to a node.
 
-![The DOM](https://www.optasy.com/sites/default/files/inline-images/DOM-example.png 'The DOM')
+![The DOM](https://www.researchgate.net/profile/Andras_Nemeslaki2/publication/254460232/figure/fig5/AS:667808983703557@1536229477309/HTML-DOM-tree.png 'The DOM')
 
 ## 11. What is the difference between em and rem units?
 
