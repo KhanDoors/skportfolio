@@ -245,7 +245,7 @@ myFunction.length describes the arity of a function (how many parameters it has,
 
 -
 
-## 19. What is the difference between synchronous and asynchronous code in JavaScript?
+## 19. What is the difference between Synchronous and Asynchronous code in JavaScript?
 
 Synchronous means each operation must wait for the previous one to complete.
 
@@ -258,6 +258,8 @@ In JavaScript, all code is synchronous due to the single-threaded nature of it. 
 JavaScript has a concurrency model based on an "event loop".
 
 Functions like **alert** block the main thread so that no user input is registered until the user closes it.
+
+![synchronous and asynchronous](http://www.phpmind.com/blog/wp-content/uploads/2017/05/synchronous-asynchronous-javascript.png 'synchronous and asynchronous')
 
 -
 
