@@ -15,7 +15,7 @@ Whenever possible, use triple equals to test equality because loose equality == 
 
 Type coercion means the values are converted into the same type.
 
--
+---
 
 ## 2. What is the difference between an element and a component in React?
 
@@ -28,13 +28,13 @@ Elements are immutable, plain objects that describe the DOM nodes or components 
 
 Components can be either classes or functions, that take props as an input and return an element tree as the output.
 
--
+---
 
 ## 3. What does lifting state up in React mean?
 
 When several components need to share the same data, then it is recommended to lift the shared state up to their closest common ancestor. For example, if two child components share the same data, it is recommended to move the shared state to parent instead of maintaining the local state in both child components.
 
--
+---
 
 ## 4. In which states can a Promise be?
 
@@ -44,7 +44,7 @@ b. fulfilled: meaning that the operation completed successfully.
 
 c. rejected: meaning that the operation failed.
 
--
+---
 
 ## 5. How do you write comments inside a JSX tree in React?
 
@@ -59,7 +59,7 @@ const tree = (
 )
 ```
 
--
+---
 
 ## 6. What is the purpose of callback function as an argument of setState?
 
@@ -71,7 +71,7 @@ setState({ name: 'syyad' }, () => {
 })
 ```
 
--
+---
 
 ## 7. How do you clone an object in JavaScript?
 
@@ -79,7 +79,7 @@ Using the object spread operator ..., the object's own enumerable properties can
 
 With this technique, prototypes are ignored. In addition, nested objects are not cloned, but rather their references get copied, so nested objects still refer to the same objects as the original. Deep-cloning is much more complex in order to effectively clone any type of object (Date, RegExp, Function, Set, etc) that may be nested within the object.
 
--
+---
 
 ## 8. What is CORS?
 
@@ -91,7 +91,7 @@ CORS behavior is not an error,  it’s a security mechanism to protect users.
 
 CORS is designed to prevent a malicious website that a user may unintentionally visit from making a request to a legitimate website to read their personal data or perform actions against their will.
 
--
+---
 
 ## 9. Describe the layout of the CSS Box Model and briefly describe each component.
 
@@ -107,7 +107,7 @@ Margin: The transparent outer-most layer that surrounds the border. It separates
 
 ![Box Model](https://www.washington.edu/accesscomputing/webd2/student/unit3/images/boxmodel.gif 'Box Model')
 
--
+---
 
 ## 10. What is the DOM?
 
@@ -127,7 +127,7 @@ Setting the innerHTML property to a new value runs the string through the HTML p
 
 ![The DOM](https://www.researchgate.net/profile/Andras_Nemeslaki2/publication/254460232/figure/fig5/AS:667808983703557@1536229477309/HTML-DOM-tree.png 'The DOM')
 
--
+---
 
 ## 11. What is the difference between em and rem units?
 
@@ -142,7 +142,7 @@ In most browsers, the font-size of the root element is set to 16px by default.
 
 Important for mobile responsive sites.
 
--
+---
 
 ## 12. What is event delegation and why is it useful? Can you show an example of how to use it?
 
@@ -155,7 +155,7 @@ This provides two main benefits:
 - It increases performance and reduces memory consumption by only needing to register a single event listener to handle potentially thousands of elements.
 - If elements are dynamically added to the parent, there is no need to register new event listeners for them.
 
-  i
+---
 
 ## 13. What is the difference between an expression and a statement in JavaScript?
 
@@ -168,7 +168,7 @@ There are two main syntactic categories in JavaScript: expressions and statement
 **A general rule of thumb:**
 _If you can print it or assign it to a variable, it’s an expression. If you can’t, it’s a statement._
 
--
+---
 
 ## 14. What are truthy and falsy values in JavaScript?
 
@@ -185,7 +185,7 @@ There are 6 falsy values in JavaScript. They are:
 
 Every other value is considered truthy.
 
--
+---
 
 ## 15. What is the difference between the array methods map() and forEach()?
 
@@ -197,13 +197,13 @@ Both methods iterate through the elements of an array. map() maps each element t
 
 - map() is the right choice to keep data immutable where each value of the original array is mapped to a new array.
 
-i
+---
 
 ## 16. How does hoisting work in JavaScript?
 
 Hoisting is a JavaScript mechanism where variable and function declarations are put into memory during the compile phase. This means that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.
 
--
+---
 
 ## 17. What is a key? What are the benefits of using it in lists?
 
@@ -224,7 +224,7 @@ const todoItems = todos.map(todo => <li key={todo.id}>{todo.text}</li>)
 
 - You should lift the key up to the component, instead of the \<li> element, if you extract list items as components.
 
-i
+---
 
 ## 18. What is the difference between a parameter and an argument?
 
@@ -243,7 +243,7 @@ arguments is an array-like object containing information about the arguments sup
 
 myFunction.length describes the arity of a function (how many parameters it has, regardless of how many arguments it is supplied).
 
--
+---
 
 ## 19. What is the difference between Synchronous and Asynchronous code in JavaScript?
 
@@ -261,7 +261,7 @@ Functions like **alert** block the main thread so that no user input is register
 
 ![synchronous and asynchronous](https://msl-network.readthedocs.io/en/latest/_images/sync_vs_async.png 'synchronous and asynchronous')
 
--
+---
 
 ## 20. What are JavaScript data types?
 
@@ -275,7 +275,7 @@ The latest ECMAScript standard defines seven data types, six of them being primi
 
 - Functions in JavaScript are objects with the capability of being callable
 
-i
+---
 
 ## 21. What are higher-order components?
 
@@ -283,7 +283,7 @@ A higher-order component (HOC) is a function that takes a component as an argume
 
 - They can be used for state abstraction and manipulation, props manipulation, render high jacking, etc.
 
-i
+---
 
 ## 22. What is the event loop in Node.js?
 
@@ -293,7 +293,7 @@ The event loop handles all async callbacks. Callbacks are queued in a loop, whil
 
 ![Event Loop](https://i.stack.imgur.com/Lbs9z.png 'Event Loop')
 
--
+---
 
 ## 23. What is a virtual DOM and why is it used in libraries/frameworks?
 
@@ -304,3 +304,5 @@ The library/framework uses the virtual DOM as a means to improve performance. Wh
 Once the changes between the old VDOM and new VDOM have been calculated by the diffing engine of the framework, the real DOM can be patched efficiently in the least time possible to match the new state of the application.
 
 ![Virtual DOM](https://cdn-images-1.medium.com/max/1200/0*D0NUsJda91_JH644.png 'Virtual DOM')
+
+---
