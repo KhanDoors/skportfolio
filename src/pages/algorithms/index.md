@@ -68,6 +68,40 @@ console.log(isPalindrome('racecar'))
 
 ---
 
+#### 4. Longest Word(ES6)
+
+Return the length of the longest word in the provided sentence.
+
+Your response should be a number.
+
+Provided test cases:
+
+findLongestWord(“May the force be with you”) should return 5
+
+findLongestWord(“Google do a barrel roll”) should return 6
+
+findLongestWord(“What if we try a super-long word such as otorhinolaryngology”) should return 19
+
+```javascript
+const longestWord = str => {
+  let words = str.split(' ')
+  let longest = ''
+  for (let word of words) {
+    if (word.length > longest.length) longest = word
+  }
+  return longest.length
+
+  //better way
+  // return str.split(" ").sort((a, b) => {
+  //   return b.length - a.length;
+  // })[0];
+}
+
+console.log(longestWord('the cow jumped over moon'))
+```
+
+---
+
 # Medium
 
 #### 1. Equal Sides Of An Array
