@@ -97,7 +97,25 @@ const longestWord = str => {
   // })[0];
 }
 
-console.log(longestWord('the cow jumped over moon'))
+console.log(longestWord('the cow jumped over the moon'))
+```
+
+---
+
+#### 5. Titlecase
+
+Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case. For the purpose of this exercise, you should also capitalize connecting words like “the” and “of”.
+
+```javascript
+const titleCase = str => {
+  return str
+    .toLowerCase()
+    .split(' ')
+    .map(word => word[0].toUpperCase() + word.substr(1))
+    .join(' ')
+}
+
+console.log(titleCase('the cow jumped over the moon again'))
 ```
 
 ---
