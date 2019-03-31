@@ -190,3 +190,40 @@ const uniqueInOrder = d => [...d].filter((x, i, a) => x != a[i + 1])
 
 console.log(uniqueInOrder('AAAABBBCCDAABBB'))
 ```
+
+---
+
+#### 3. Largest Number in an Array
+
+Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.
+
+Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].
+
+-
+
+```javascript
+const larg = arr => {
+  let maxes = []
+  for (let i = 0; i < arr.length; i++) {
+    let tempMax = arr[i][0]
+    for (let j = 0; j < arr[i].length; j++) {
+      let currel = arr[i][j]
+      if (currel >= tempMax) {
+        tempMax = currel
+      }
+    }
+    maxes.push(tempMax)
+  }
+  return maxes
+}
+```
+
+#### ES6 Method
+
+```javascript
+const larg = arr => {
+  return arr.map(subArr => Math.max.apply(null, subArr))
+}
+
+console.log(larg([[5, 40, 6, 7], [1, 6, 80, 8], [3, 60, 9, 8], [50, 4, 1, 6]]))
+```
