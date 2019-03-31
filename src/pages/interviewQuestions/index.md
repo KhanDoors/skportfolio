@@ -259,7 +259,7 @@ JavaScript has a concurrency model based on an "event loop".
 
 Functions like **alert** block the main thread so that no user input is registered until the user closes it.
 
-![synchronous and asynchronous](http://www.phpmind.com/blog/wp-content/uploads/2017/05/synchronous-asynchronous-javascript.png 'synchronous and asynchronous')
+![synchronous and asynchronous](https://msl-network.readthedocs.io/en/latest/_images/sync_vs_async.png 'synchronous and asynchronous')
 
 -
 
