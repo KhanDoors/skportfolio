@@ -5,7 +5,72 @@ title: 'JavaScript Algorithms'
 author: 'Syyad Khan'
 ---
 
-# 1. Equal Sides Of An Array
+# Easy
+
+#### 1. Reverse a String(ES6)
+
+Take the string provided and reverse the order of the characters, must be a string when done.
+
+```javascript
+const revstr = str =>
+  str
+    .split('')
+    .reverse()
+    .join('')
+
+console.log(revstr('abcdefghijklmnopqrst'))
+```
+
+---
+
+#### 2. Factorialize(ES6)
+
+Return the factorial of the provided integer. If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n. Factorials are often represented with the shorthand notation n!
+
+For example: 5! = 1 x 2 x 3 x 4 x 5 = 120
+
+```javascript
+const factorialize = num => {
+  let result = 1
+  for (let i = 1; i <= num; i++) {
+    result *= i
+  }
+  return result
+}
+
+console.log(factorialize(5))
+```
+
+---
+
+#### 3. Palindrome(ES6)
+
+Return true if the given string is a palindrome. Otherwise, return false. A palindrome is a word or sentence that’s spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+
+Note. You’ll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything lower case in order to check for palindromes.
+
+We’ll pass strings with varying formats, such as “racecar”, “RaceCar”, and “race CAR” among others.
+
+```javascript
+const isPalindrome = str => {
+  let reg = /[\W_]/g
+  let newStr = str.toLowerCase().replace(reg, '')
+
+  const revString = newStr
+    .split('')
+    .reverse()
+    .join('')
+  return revString === newStr
+}
+
+console.log(isPalindrome('racecar'))
+```
+
+---
+
+# Medium
+
+#### 1. Equal Sides Of An Array
 
 You are going to be given an array of integers. Your job is to take that array and find an index N where the sum of the integers to the left of N is equal to the sum of the integers to the right of N. If there is no index that would make this happen, return -1.
 
@@ -30,7 +95,7 @@ function findEvenIndex(arr) {
 }
 ```
 
-#### ES6 Method
+### ES6 Method
 
 ```javascript
 const findEvenIndex = arr => {
@@ -46,7 +111,7 @@ console.log(findEvenIndex([1, 2, 3, 4, 3, 2, 1]))
 
 ---
 
-# 2. Unique In Order
+#### 2. Unique In Order
 
 Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.
 
