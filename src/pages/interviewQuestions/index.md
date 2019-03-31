@@ -107,6 +107,8 @@ document.getElementById() and document.querySelector() are common functions for 
 
 Setting the innerHTML property to a new value runs the string through the HTML parser, offering an easy way to append dynamic HTML content to a node.
 
+![The DOM](https://www.optasy.com/sites/default/files/inline-images/DOM-example.png 'The DOM')
+
 ## 11. What is the difference between em and rem units?
 
 Both **em** and **rem** units are based on the font-size CSS property. The only difference is where they inherit their values from.
@@ -255,4 +257,4 @@ The library/framework uses the virtual DOM as a means to improve performance. Wh
 
 Once the changes between the old VDOM and new VDOM have been calculated by the diffing engine of the framework, the real DOM can be patched efficiently in the least time possible to match the new state of the application.
 
-![Virtual DOM](https://elmprogramming.com/images/virtual-dom/elm-runtime-virtual-dom.png 'Virtual DOM')
+![Virtual DOM](https://cdn-images-1.medium.com/max/1200/0*D0NUsJda91_JH644.png 'Virtual DOM')
