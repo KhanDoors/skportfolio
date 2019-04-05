@@ -120,6 +120,43 @@ console.log(titleCase('the cow jumped over the moon again'))
 
 ---
 
+#### 6. FizzBuzz 2 ways
+
+FizzBuzz is the classic algorithm everyone should have. Here I have it run 2 ways. The difference is the first way prints out all numbers up to a limit and the second way allows the user to check a specific number.
+
+```javascript
+const fizzbuzz = () => {
+  for (let i = 1; i <= 100; i++) {
+    if (i % 15 === 0) {
+      console.log('fizzbuzz')
+    } else if (i % 3 === 0) {
+      console.log('fizz')
+    } else if (i % 5 === 0) {
+      console.log('buzz')
+    } else {
+      console.log(i)
+    }
+  }
+}
+
+console.log(fizzbuzz())
+```
+
+FizzBuzz with user checking a specific number:
+
+```javascript
+const fizzbuzz = num => {
+  if (num % 15 === 0) return 'fizzbuzz'
+  if (num % 3 === 0) return 'fizz'
+  if (num % 5 === 0) return 'buzz'
+  return num
+}
+
+console.log(fizzbuzz(33))
+```
+
+---
+
 # Medium
 
 #### 1. Equal Sides Of An Array
