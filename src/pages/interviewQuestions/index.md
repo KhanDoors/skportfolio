@@ -105,7 +105,7 @@ Margin: The transparent outer-most layer that surrounds the border. It separates
 
 -
 
-![Box Model](../../images/blogImages/box-model.jpg 'Box Model')
+![Box Model](https://www.1keydata.com/css-tutorial/box-model.jpg 'Box Model')
 
 ---
 
