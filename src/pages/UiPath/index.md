@@ -41,3 +41,9 @@ Ok
 The day is not done yet but I wanted to get an entry in. So this morning I built a robot which took data from an excel spreadsheet and populated a web app with set fields. So i grabbed the 100 entries from the excel spreadsheets and placed them in the different fields in the web app, it took about 3 minutes (the final robot, not building it, building it took about an hour), which I think is pretty good. Some of the things that made it interesting was setting delays, simulating button clicks, emptying fields and a few other things. All in all I'm finding this pretty easy.
 
 I had to take some time off the watch Tiger win his 5th Master's title, which was amazing. I don't like taking time off from coding but that was worth it! I will try to reengage in a little while.
+
+4/15 day 4
+Started the robot automation challenge: downloaded excel spreadsheet for use in project. I set everything up and began the building of the robot.
+
+4/16 day 5
+Completed the automation robot challenge. 100% success in 45 seconds was better than expected. The main lesson here was anchor base usage. A lot of fun really.
