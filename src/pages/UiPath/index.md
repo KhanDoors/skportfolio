@@ -88,3 +88,6 @@ UiPath Solution Architect - Certificate of Completion
 
 5/1
 So I'm playing catch-up with this blog. I've been working so hard at learing UiPath that I haven't had a chance to work on the blog. So over the last 3 weeks I've completed all the training that UiPath Academy has to offer. I've completed a 8.5 hour Udemy course and strarted 4 others. I've set up Studio, Orchestrator and am running robots on my home PC. I've automated several personal processes.
+
+5/4
+UiPath - Level 1 Robotic Process Automation Certificate of Completion (Udemy)
