@@ -125,7 +125,7 @@ document.getElementById() and document.querySelector() are common functions for 
 
 Setting the innerHTML property to a new value runs the string through the HTML parser, offering an easy way to append dynamic HTML content to a node.
 
-![The DOM](https://www.researchgate.net/profile/Andras_Nemeslaki2/publication/254460232/figure/fig5/AS:667808983703557@1536229477309/HTML-DOM-tree.png 'The DOM')
+![The DOM](https://res.cloudinary.com/khandoors/image/upload/c_scale,h_250,w_250/v1560130888/Blog%20Images/HTML-DOM-tree.png 'The DOM')
 
 ---
 
