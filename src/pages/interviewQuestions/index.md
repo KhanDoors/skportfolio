@@ -113,7 +113,7 @@ Margin: The transparent outer-most layer that surrounds the border. It separates
 
 The DOM (Document Object Model) is a cross-platform API that treats HTML and XML documents as a tree structure consisting of nodes. These nodes (such as elements and text nodes) are objects that can be programmatically manipulated and any visible changes made to them are reflected live in the document. In a browser, this API is available to JavaScript where DOM nodes can be manipulated to change their styles, contents, placement in the document, or interacted with through event listeners.
 
-![The DOM](https://res.cloudinary.com/khandoors/image/upload/c_thumb,w_200,g_face/v1560127338/Blog%20Images/Example-of-DOM-Node-Tree.png 'The DOM')
+![The DOM](https://res.cloudinary.com/khandoors/image/upload/c_scale,w_350/v1560127338/Blog%20Images/Example-of-DOM-Node-Tree.png 'The DOM')
 
 #### Good to hear
 
