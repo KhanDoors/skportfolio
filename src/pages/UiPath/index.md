@@ -5,7 +5,7 @@ title: 'UiPath RPA'
 author: 'Syyad Khan'
 ---
 
-![UiPath](https://qph.fs.quoracdn.net/main-qimg-f82cc51e1ddf93757683fa43a4b2d585 'UiPath')
+![UiPath](https://res.cloudinary.com/khandoors/image/upload/c_scale,h_250,w_250/v1560214980/Blog%20Images/main-qimg-f82cc51e1ddf93757683fa43a4b2d585.png 'UiPath')
 UiPath RPA
 
 https://connect.uipath.com
