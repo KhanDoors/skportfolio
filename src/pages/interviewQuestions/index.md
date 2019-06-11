@@ -291,7 +291,7 @@ The event loop handles all async callbacks. Callbacks are queued in a loop, whil
 
 - The event loop allows Node.js to perform non-blocking I/O operations, despite the fact that JavaScript is single-threaded
 
-![Event Loop](https://i.stack.imgur.com/Lbs9z.png 'Event Loop')
+![Event Loop](https://res.cloudinary.com/khandoors/image/upload/c_scale,h_250,w_250/v1560214383/Blog%20Images/Lbs9z.png 'Event Loop')
 
 ---
 
@@ -303,6 +303,6 @@ The library/framework uses the virtual DOM as a means to improve performance. Wh
 
 Once the changes between the old VDOM and new VDOM have been calculated by the diffing engine of the framework, the real DOM can be patched efficiently in the least time possible to match the new state of the application.
 
-![Virtual DOM](https://cdn-images-1.medium.com/max/1200/0*D0NUsJda91_JH644.png 'Virtual DOM')
+![Virtual DOM](https://res.cloudinary.com/khandoors/image/upload/c_scale,h_250,w_250/v1560214482/Blog%20Images/0_D0NUsJda91_JH644.png 'Virtual DOM')
 
 ---
