@@ -21,7 +21,7 @@ class GeneralInfo extends Component {
             Stack page to teach what I know about those techs. I have many more
             projects to display. I have plans for a Youtube channel, more to
             come on that. Generally I want to take writing code as far as I
-            possibly can. The contact page has a form that will email me
+            possibly can. The Contact page has a form that will email me
             directly if you need to get in touch with me. Thank you.
             <br />
             <br />

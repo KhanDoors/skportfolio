@@ -17,7 +17,7 @@ class MyInfo extends Component {
             </SectionButton>
           </Link>
           <Title
-            message="Call, Email or use the below form to send me a Message"
+            message="Text, Call, Email or use the below form to send me a Message"
             title="Let's Talk About it"
           />
           <MyInfoWrapper>
