@@ -10,7 +10,7 @@ class GeneralInfo extends Component {
       <Section>
         <Title
           title="About Me"
-          message="This site will be under construction for a long time to come ... hopefully"
+          message="This site will be under construction for a long time to come ... hopefully!"
         />
         <GeneralInfoWrapper>
           <h4 className="text">
